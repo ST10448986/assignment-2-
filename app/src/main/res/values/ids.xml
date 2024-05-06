@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="petImageView" type="id" />
+    <item name="hungerBar" type="id" />
+    <item name="happinessBar" type="id" />
+    <item name="healthBar" type="id" />
+    <item name="cleanlinessBar" type="id" />
+    <item name="feedButton" type="id" />
+    <item name="playButton" type="id" />
+    <item name="cleanButton" type="id" />
+</resources>

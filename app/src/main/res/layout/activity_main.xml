@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    https://glitch.com/edit/#!/tamagotrain?path=README.md%3A1%3A0
+    20,000+ Best Cat Photos · 100% Free Download · Pexels Stock Photos
+    50,000+ Best Free Cat Pictures & Images [HD] - Pixabay
+    readme.so
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/petImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/pet_image_description"
+        app:layout_constraintBottom_toTopOf="@+id/statusBarsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:src="@drawable/catstart" />
+
+    <LinearLayout
+        android:id="@+id/statusBarsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petImageView">
+
+        <ProgressBar
+            android:id="@+id/hungerBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/happinessBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100" />
+
+        <ProgressBar
+            android:id="@+id/cleanlinessBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusBarsLayout">
+
+
+        <Button
+            android:id="@+id/clean"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:text="clean"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:id="@+id/feed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:text="feed"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:text="play"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
